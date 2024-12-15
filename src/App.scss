@@ -1,0 +1,15 @@
+@import './styles/global.scss';
+@import './styles/form.scss';
+@import './styles/error.scss';
+
+
+body,html{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color:rgb(233, 239, 233)!important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow: scroll;
+}

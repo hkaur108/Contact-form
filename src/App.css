@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 600px) {
+  body {
+    padding: 3rem 2rem;
+    margin: auto;
+  }
+  .form-styling {
+    width: 100vw;
+    height: 80vh;
+    margin: 2rem auto;
   }
 }
+.form-styling {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  max-width: 700px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 3px rgb(244, 242, 242);
+  transition: all 0.2s ease-in;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:hover, textarea:hover {
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  cursor: pointer;
+  border: 2px solid rgb(38, 164, 38);
+}
+
+input[type=checkbox]:checked {
+  background-color: green;
+  color: white;
+  appearance: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: green !important;
+}
+
+input[type=radio]:checked {
+  background-color: green;
+  color: white;
+  appearance: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+.radio-class {
+  border-radius: 5px;
+  border: 2px solid rgb(38, 164, 38);
+}
+.radio-class label:hover {
+  cursor: pointer;
+}
+.radio-class label::after {
+  content: "";
+}
+.radio-class:hover {
+  border: 5px solid green;
+  cursor: pointer;
+}
+.radio-class:checked {
+  background-color: green;
+}
+
+label::after {
+  content: "*";
+}
+
+.reset {
+  all: unset;
+}
+
+p {
+  color: red;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  background-color: rgb(233, 239, 233) !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow: scroll;
+}/*# sourceMappingURL=App.css.map */

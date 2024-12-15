@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+
+
+  @media screen and (max-width:600px){
+    body{
+      padding:3rem 2rem;
+      margin:auto;
+    }
+    .form-styling{
+      width:100vw;
+      height:80vh;
+      margin:2rem auto;
+    }
+    
+    
+  }
